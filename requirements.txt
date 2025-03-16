@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+jinja2
+requests
+beautifulsoup4
+pydantic
+google-generativeai
+langchain
+httpx
+python-dotenv
+langchain_community
