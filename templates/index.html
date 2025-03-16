@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEO AI Agent System</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <title>SEO Multi-Agent System</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <div class="container">
         <h1>SEO Multi-Agent System</h1>
-        <form id="analysisForm">
-            <input type="url" name="main_url" placeholder="Enter Main URL" required>
+        <form action="/analyze" method="post">
+            <input type="text" name="main_url" placeholder="Enter Main URL" required>
             <input type="text" name="comparison_urls" placeholder="Comparison URLs (comma-separated)">
             <button type="submit">Analyze</button>
         </form>
-        <div id="animationArea">
-            <div class="robot" id="robot"></div>
-            <p id="statusText">Awaiting task...</p>
-        </div>
-        <div id="results"></div>
+        <img src="/static/robot.png" alt="Robot" class="robot-img">
     </div>
-    <script src="/static/script.js"></script>
 </body>
 </html>

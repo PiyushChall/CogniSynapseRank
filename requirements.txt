@@ -8,4 +8,4 @@ google-generativeai
 langchain
 httpx
 python-dotenv
-langchain_community
+python-multipart

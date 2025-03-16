@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SEO Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Results</h1>
+        <p><strong>Main URL:</strong> {{ results.main_url }}</p>
+
+        {% if results.comparison_urls %}
+        <p><strong>Comparison URLs:</strong></p>
+        <ul>
+            {% for url in results.comparison_urls %}
+            <li>{{ url }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        <div class="results-section">
+            <h3>Keyword Analysis</h3>
+            <p>{{ results.keyword_result }}</p>
+
+            <h3>Content Analysis</h3>
+            <p>{{ results.content_result }}</p>
+
+            <h3>Visualization</h3>
+            <p>{{ results.visual_result }}</p>
+
+            <h3>Manager AI Summary</h3>
+            <p>{{ results.manager_result }}</p>
+
+            <h3>On-Page Analysis</h3>
+            <p>{{ results.onpage_result }}</p>
+
+            <h3>Link Building</h3>
+            <p>{{ results.linkbuilding_result }}</p>
+        </div>
+    </div>
+</body>
+</html>

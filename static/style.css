@@ -1,93 +1,47 @@
 body {
+    background-color: #f4f4f4;
     font-family: Arial, sans-serif;
-    background: #f0f4f8;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    text-align: center;
+    padding: 30px;
 }
 
 .container {
     background: #fff;
     padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    text-align: center;
+    margin: auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-form input {
-    width: 90%;
-    margin: 10px 0;
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    width: 40%;
     padding: 10px;
-    border-radius: 8px;
+    margin: 10px;
+    border-radius: 5px;
     border: 1px solid #ccc;
 }
 
 button {
     padding: 10px 20px;
-    background: #4CAF50;
+    background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-#animationArea {
+.robot-img {
+    width: 150px;
     margin-top: 20px;
 }
 
-.robot {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    background: #4CAF50;
-    border-radius: 50%;
-    position: relative;
-    animation: float 2s infinite;
-}
-
-.robot::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: #333;
-    border-radius: 50%;
-    position: absolute;
-    top: 30px;
-    left: 20px;
-}
-
-.robot::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: #333;
-    border-radius: 50%;
-    position: absolute;
-    top: 30px;
-    right: 20px;
-}
-
-@keyframes float {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
-
-#statusText {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-#results {
-    margin-top: 20px;
+.results-section {
+    margin-top: 30px;
     text-align: left;
-    max-height: 200px;
-    overflow-y: auto;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 8px;
 }
